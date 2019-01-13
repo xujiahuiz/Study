@@ -1,4 +1,7 @@
- mSmartRefreshLayout = (SmartRefreshLayout) getView(R.id.attention_ref);
+ 
+
+//网站
+mSmartRefreshLayout = (SmartRefreshLayout) getView(R.id.attention_ref);
       
         //设置 Header 为 贝塞尔雷达 样式
         mSmartRefreshLayout.setRefreshHeader(new WaveSwipeHeader(mContext)).setPrimaryColorsId(R.color.color35343c);
