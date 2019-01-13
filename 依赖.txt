@@ -1,0 +1,91 @@
+﻿repositories {
+  mavenCentral()
+  google()
+}
+
+dependencies {
+  implementation 'com.github.bumptech.glide:glide:4.8.0'
+  annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+}---->Glide
+
+
+compile 'com.squareup.picasso:picasso:2.5.2' -->Picasso
+
+compile 'com.google.code.gson:gson:2.2.2'-->gson
+
+compile 'org.xutils:xutils:3.5.0' --xUtils
+
+HttpClient 过滤器:packagingOptions {
+            exclude 'META-INF/DEPENDENCIES'
+        }
+
+https://github.com/ming723/UniversalLibrary   --->综合项目
+
+https://github.com/wyouflf/xUtils3   --->xUtils3
+
+
+compile 'com.jakewharton:disklrucache:2.0.2' --->Lrucache
+
+
+http://www.runoob.com/design-pattern/observer-pattern.html --> 设计模式
+
+compile 'de.hdodenhof:circleimageview:2.0.0'  ---->图片圆角
+
+
+ImageLoader 需要手动配置application
+
+1.  compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.3'  
+1.     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />  
+2.     <uses-permission android:name="android.permission.INTERNET" />  
+
+implementation 'com.android.support:appcompat-v7:26.1.0'---->改版本
+implementation 'com.android.support:design:23.3.0'--->tablelayout
+app:tabIndicatorColor="@color/colorPrimary"
+app:tabSelectedTextColor="@color/colorPrimary"--->tablelayout跟主题一样
+
+
+implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+compile '\com.squareup.picasso:picasso:2.5.2'——>banner图
+
+implementation 'com.squareup.okhttp3:okhttp:3.2.0'
+implementation 'com.squareup.okio:okio:1.7.0'--->OKHttp
+ 
+//git解决错误 
+git pull origin master –allow-unrelated-histories 
+git push -u origin master -f
+//git
+git remote add origin +github的包名
+classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'-->二维码权限（根build）
+implementation 'com.android.support:recyclerview-v7:23.4.0'--->RecyclerView
+
+implementation 'com.yanzhenjie:permission:2.0.0-rc4'--->高德动态获取权限依赖
+<service android:name="com.amap.api.location.APSService"></service>--->高德servies
+
+implementation 'org.greenrobot:eventbus:3.1.1'---> eventBus
+
+implementation 'com.jakewharton:butterknife:9.0.0-rc1'
+annotationProcessor 'com.jakewharton:butterknife-compiler:9.0.0-rc1'
+classpath 'com.jakewharton:butterknife-gradle-plugin:9.0.0-rc1'  （主build）---> butterknife
+ //RXjava and  Retrofit
+ implementation 'com.squareup.retrofit2:adapter-rxjava2:2.4.0'
+ implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
+ implementation 'io.reactivex.rxjava2:rxandroid:2.1.0'  --->RXjava and  Retrofit
+
+//权限
+ <uses-permission android:name="android.permission.INTERNET" />
+ <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+ <uses-permission android:name="android.permission.CAMERA" />
+ <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+ <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+ implementation 'com.yanzhenjie:permission:2.0.0-rc4'-->动态获取权限
+
+ implementation 'com.facebook.fresco:fresco:1.11.0'--->fresco
+
+  classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
+  classpath 'com.github.dcendents:android-maven-gradle-plugin:1.4.1'  -->xrecyclerview  根buide
+ implementation 'com.zzhoujay.richtext:richtext:2.4.7'--->富文本
+
+ //点赞
+    api 'com.sum.slike:library:0.2.1'
+    api 'com.github.wanglu1209:WLikeAnim:1.1'

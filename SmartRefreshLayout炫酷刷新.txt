@@ -1,0 +1,32 @@
+ mSmartRefreshLayout = (SmartRefreshLayout) getView(R.id.attention_ref);
+      
+        //设置 Header 为 贝塞尔雷达 样式
+        mSmartRefreshLayout.setRefreshHeader(new WaveSwipeHeader(mContext)).setPrimaryColorsId(R.color.color35343c);
+        //设置 Footer 为 球脉冲 样式
+        mSmartRefreshLayout.setRefreshFooter(new BallPulseFooter(mContext).setSpinnerStyle(SpinnerStyle.Scale));
+        mSmartRefreshLayout.setOnRefreshListener(new OnRefreshListener() {
+            @Override
+            public void onRefresh(final RefreshLayout refreshlayout) {
+               isRefresh=true;
+                doHttp();
+                mSmartRefreshLayout.finishRefresh();
+            }
+        });
+        mSmartRefreshLayout.setOnLoadMoreListener(new OnLoadMoreListener() {
+            @Override
+            public void onLoadMore(final RefreshLayout refreshlayout) {
+                isRefresh=false;
+                mPage++;
+                doHttp();
+                mSmartRefreshLayout.finishLoadMore();
+
+            }
+        });
+        mSmartRefreshLayout.setEnableLoadMore(true);
+        mSmartRefreshLayout.autoRefresh();
+//布局
+ <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/attention_ref"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+</com.scwang.smartrefresh.layout.SmartRefreshLayout>
